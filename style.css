@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./resource/font/Norse-Bold.otf);
+}
+
+#splash{
+    background-image: url(./resource/images/florian-hahn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    body{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #splash{
+        flex: 1;
+    }
+    #signup{
+        flex: 2;
+    }
+    #logobar{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #icon{
+        flex: 2;
+        width:20%;
+
+        left: 40%;
+        right: 40%;
+        top: 20%;
+    }
+    #iconName{
+        flex: 1;
+        height: 80%;
+        font-size: 10cqw;
+        top: 40%;
+        right: 10%;
+        left: 10%;
+        text-align: center;
+        color: white;
+        font-family: "Norse Bold";
+    }
+  }
+
+@media screen and (min-width: 767px) {
+    body{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+    #splash{
+        flex: 1;
+    }
+    #signup{
+        flex:1
+    }
+    #logobar{
+        position: absolute;
+        top: 30%;
+        height: 10cqw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    #icon{
+        height: 80%;
+    }
+    #iconName{
+        font-size: 4cqw;
+        color: white;
+        font-family: "Norse Bold";
+    }
+}
+
+
+
+
+#logobar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#splashFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#signup{
+    background-color: white;
+}
