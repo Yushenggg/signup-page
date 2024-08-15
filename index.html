@@ -15,7 +15,7 @@
         </div>
         <div id="splashFooter"></div>
     </div>
-    <form action="">
+    <form id="signupForm" action="">
         <div class="textHalf">
             <h1>A false random travel photography site.<br>
                 You NEED this product.<br>
@@ -34,10 +34,12 @@
                         <div class="inputContainer">
                             <label for="firstName">First Name:</label>
                             <input type="text" name="firstName" id="firstName">
+                            <p class="error"></p>
                         </div>
                         <div class="inputContainer">
                             <label for="lastName">Last Name:</label>
                             <input type="text" name="lastName" id="lastName">
+                            <p class="error"></p>
                         </div>
                     </div>
 
@@ -45,21 +47,25 @@
                         <div class="inputContainer">
                             <label for="email">Email:</label>
                             <input type="text" name="email" id="email">
+                            <p class="error"></p>
                         </div>
                         <div class="inputContainer">
                             <label for="phoneNum">Phone Number:</label>
                             <input type="text" name="phoneNum" id="phoneNum">
+                            <p class="error"></p>
                         </div>
                     </div>
 
                     <div class="inputRow">
                         <div class="inputContainer">
                             <label for="password">Password:</label>
-                            <input type="text" name="password" id="password">
+                            <input type="password" name="password" id="password">
+                            <p class="error"></p>
                         </div>
                         <div class="inputContainer">
                             <label for="cfmPassword">Confirm Password:</label>
-                            <input type="text" name="cfmPassword" id="cfmPassword">
+                            <input type="password" name="cfmPassword" id="cfmPassword">
+                            <p class="error"></p>
                         </div>
                     </div>
                 
@@ -68,8 +74,8 @@
             
         </div>
         <div class="extraHalf">
-            <button></button>
-        
+            <button id="submitBtn" type="button">Sign Up</button>
+            <h3>Already have an account? <a href="">Log in</a></h3>
         </div>
     </form>
 
