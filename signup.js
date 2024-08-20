@@ -57,7 +57,11 @@ submit.addEventListener("click",()=>{
     checkInput()
     checkBlank()
     console.log("b4")
-
+    
+    let containsInvalid  = Array.from(inputList).reduce((valBool,currentObj)=>{
+        return (isInvalid(currentObj)||valBool) 
+    },false)
+    if(!containsInvalid) form.submit()
     console.log("after")
 
 })
